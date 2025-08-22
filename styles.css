@@ -1,0 +1,56 @@
+body{
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+.main-container{
+    width: 600px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+
+}
+
+.white-div{
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 20px rgba(0,0,0,0.5);
+}
+
+input{
+    height: 22px;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 6px;
+}
+/* momento que eu seleciono o input */
+/* entre colchetes para a estilização pegar só nos de tipo number */
+input[type=number]:focus{
+    outline: none;
+    box-shadow: 0 0 10px #3b59ee;
+    border: 1px solid #74d0ff;
+}
+
+button{
+    padding: 10px 15px;
+    background-color: #3b59ee;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #0069d9;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+}
