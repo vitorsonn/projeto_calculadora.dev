@@ -14,9 +14,13 @@
             <input placeholder="Digite um número" type="number" id="number1">
 
             <input placeholder="Digite outro número" type="number" id="number2">
-
-            <button id="soma" onclick=calc()>+</button>
-
+            <div class="buttons">
+                   <button id="soma" onclick="calc('+')">+</button>
+                   <button id="sub"onclick="calc('-')">-</button>
+                   <button id="mult"onclick="calc('*')">x</button>
+                   <button id="div"onclick='calc("/")'>/</button>
+            </div>
+            
             <input readonly type="text" id="result">
         </div>
 

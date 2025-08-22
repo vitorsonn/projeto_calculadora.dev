@@ -4,14 +4,23 @@
 // mostrar no ultimo input o resultado
 
 
-function calc(){
+function calc(op){
     let num1 = parseFloat(document.getElementById("number1").value) 
     //parseFloat ou ParseInt são métodos que convertem string em numeros
     let num2 = parseFloat(document.getElementById("number2").value)
-
-    let result = num1 +  num2
-
-    document.getElementById("result").value = result // o ultimo input recebe o valor do resultado
-
     
+    let result = 0
+
+    switch(op){
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '/': result = num1 / num2; break;
+
+        
+    }
+
+
+
+    document.getElementById("result").value = result // o ultimo input recebe o valor do resultado   
 }
