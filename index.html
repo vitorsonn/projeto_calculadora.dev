@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="white-div">
-            <h1>Calculadora</h1>
+            <object data="calculate_black_48dp.svg" type="image/svg+xml"></object>
+            <div class="calc-title">
+                Calculadora
+            </div>
 
             <input placeholder="Digite um número" type="number" id="number1">
 
             <input placeholder="Digite outro número" type="number" id="number2">
             <div class="buttons">
-                   <button id="soma" onclick="calc('+')">+</button>
-                   <button id="sub"onclick="calc('-')">-</button>
-                   <button id="mult"onclick="calc('*')">x</button>
-                   <button id="div"onclick='calc("/")'>/</button>
+                <!-- dentro das funções foram definidos os operadores como argumentos -->
+                <button id="soma" onclick="calc('+')">+</button>
+                <button id="sub" onclick="calc('-')">-</button>
+                <button id="mult" onclick="calc('*')">x</button>
+                <button id="div" onclick='calc("/")'>/</button>
             </div>
-            
+
             <input readonly type="text" id="result">
         </div>
-
         <div class="history">
+            <div class="title-history">
+                <h1>Histórico:</h1>
+            </div>
 
+            <div class="last-operations">
+                <small>10 últimas operações</small>
+                <div id="history">
 
+                </div>
+            </div>
         </div>
     </div>
     <script src="operações.js"></script>
 </body>
+
 </html>
